@@ -36,7 +36,7 @@ Emails en bruto (API mock)
 └────────┬────────┘
          ▼
 ┌─────────────────┐
-│   Dashboard     │  src/dashboard.py  — interfaz Streamlit con sliders en vivo
+│   Dashboard     │  src/dashboard.py  — interfaz Streamlit con sliders
 └─────────────────┘
 ```
 
