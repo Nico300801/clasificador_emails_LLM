@@ -36,28 +36,28 @@ _BLANK_LINES   = re.compile(r"\n{3,}")
 def clean_email(raw_body: str) -> str:
     text = raw_body
 
-    # 1. Strip HTML
+    # 1. Quitar HTML
     text = _HTML_TAGS.sub(" ", text)
     text = _HTML_ENTITIES.sub(" ", text)
 
-    # 2. Remove forwarded message blocks (before quoted lines)
+    # 2. Eliminar bloques de mensajes reenviados
     text = _FWD_HEADER.sub("", text)
 
-    # 3. Remove reply headers ("On Mon, ... wrote:")
+    # 3. Eliminar encabezados de respuesta
     text = _REPLY_HEADER.sub("", text)
 
-    # 4. Remove quoted reply lines ("> ...")
+    # 4. Eliminar líneas de respuesta entre comillas ("> ...")
     text = _QUOTED_LINES.sub("", text)
 
-    # 5. Remove signatures and disclaimers
+    # 5. Eliminar firmas y descargos de responsabilidad
     text = _SIGNATURE.sub("", text)
 
-    # 6. Redact personal data
+    # 6. Redactar datos personales
     text = _PHONE.sub("[PHONE]", text)
     text = _EMAIL_ADDR.sub("[EMAIL]", text)
     text = _URL.sub("[URL]", text)
 
-    # 7. Normalize whitespace
+    # 7. Normalizar espacios en blanco
     text = text.replace("\r\n", "\n").replace("\r", "\n")
     text = _BLANK_LINES.sub("\n\n", text)
     text = text.strip()
