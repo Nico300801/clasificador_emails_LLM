@@ -73,13 +73,15 @@ Emails en bruto (API mock)
 pip install -r requirements.txt
 ```
 
-### 2. (Recomendado) Instalar Ollama y descargar el modelo
+### 2. (Recomendado) Instalar Ollama, descargar el modelo y ejecutarlo
 
 ```bash
 # Install Ollama — https://ollama.com
 irm https://ollama.com/install.ps1 | iex
 
 ollama pull gemma3:1b
+
+ollama run gemma3:1
 ```
 
 ### 3. Iniciar el servidor de la API mock
