@@ -1,7 +1,7 @@
 # 📬 Pipeline de Priorización de Emails
 
-> **Máster Digitech — Proyecto práctico**  
-> Clasificación y orden automático decorreos de soporte entrantes usando análisis con LLM local y una fórmula configurable de urgencia.
+> **Máster Digitech FP — Proyecto práctico**  
+> Clasificación y orden automático de correos de soporte entrantes usando análisis con LLM local y una fórmula configurable de urgencia.
 
 ---
 
