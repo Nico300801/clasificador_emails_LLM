@@ -81,7 +81,7 @@ irm https://ollama.com/install.ps1 | iex
 
 ollama pull gemma3:1b
 
-ollama run gemma3:1
+ollama run gemma3:1b
 ```
 
 ### 3. Iniciar el servidor de la API mock
