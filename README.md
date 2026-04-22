@@ -5,7 +5,7 @@
 
 ---
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 ```
 Emails en bruto (API mock)
@@ -42,7 +42,7 @@ Emails en bruto (API mock)
 
 ---
 
-## 📁 Estructura del repositorio
+## Estructura del repositorio
 
 ```
 📂 src/
@@ -65,7 +65,7 @@ Emails en bruto (API mock)
 
 ---
 
-## 🚀 Inicio rápido
+## Inicio rápido
 
 ### 1. Instalar dependencias
 
@@ -108,7 +108,7 @@ streamlit run src/dashboard.py
 
 ---
 
-## 🧮 Fórmula de puntuación de urgencia
+## Fórmula de puntuación de urgencia
 
 ```
 urgency_score = (
@@ -146,7 +146,7 @@ El dashboard de Streamlit permite modificar cualquier peso en tiempo real y ver 
 
 ---
 
-## 🧹 Pipeline de limpieza (regex)
+## Pipeline de limpieza (regex)
 
 `cleaner.py` aplica las siguientes transformaciones en orden:
 
@@ -160,7 +160,7 @@ El dashboard de Streamlit permite modificar cualquier peso en tiempo real y ver 
 
 ---
 
-## 🤖 Análisis con LLM
+## Análisis con LLM
 
 El analizador envía un prompt estructurado al modelo local de Ollama (`gemma3:1b`) y espera una respuesta JSON con:
 
@@ -173,7 +173,7 @@ El analizador envía un prompt estructurado al modelo local de Ollama (`gemma3:1
 }
 ```
 
-## 📦 Dependencias
+## Dependencias
 
 ```
 fastapi
